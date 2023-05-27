@@ -1,0 +1,6 @@
+.presentation div div h2 {
+  font-size: var(--font-size-xxl);
+}
+.presentation div div p {
+  font-size: var(--font-size-xl);
+}

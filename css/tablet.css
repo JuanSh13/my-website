@@ -1,0 +1,16 @@
+.presentation div div {
+  display: flex;
+  align-items: start;
+
+  text-align: start;
+}
+.presentation div div h2 {
+  font-size: var(--font-size-xxxl);
+}
+
+.who-am-i div {
+  font-size: var(--font-size-l);
+}
+.who-am-i div h3 {
+  font-size: var(--font-size-xl);
+}

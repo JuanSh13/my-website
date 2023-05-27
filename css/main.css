@@ -1,0 +1,95 @@
+* {
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bd-purple: #4c0bce;
+  --bd-violet: #712cf8;
+
+  --font-size-xxs: 1.4rem;
+  --font-size-xs: 1.6rem;
+  --font-size-s: 1.8rem;
+  --font-size-m: 2rem;
+  --font-size-l: 2.6rem;
+  --font-size-xl: 3rem;
+  --font-size-xxl: 4rem;
+  --font-size-xxxl: 6.2rem;
+}
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 62.5%;
+}
+body {
+}
+
+nav {
+  width: 100%;
+
+  color: #fff;
+  font-size: var(--font-size-s);
+
+  background: linear-gradient(90deg, var(--bd-violet) 0%, var(--bd-purple) 40%, var(--bd-violet) 100%);
+
+  z-index: 10000000;
+}
+nav div a i {
+  font-size: var(--font-size-l);
+}
+.nav-list .nav-list__list-group {
+  width: 100%;
+}
+.nav-list .nav-list__list-group li {
+  list-style: none;
+}
+
+
+.presentation {
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../resources/bg-presentation.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.presentation div {
+  height: 100vh;
+}
+.presentation div div {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+}
+.presentation div div h2 {
+  color: var(--bd-violet);
+  font-size: var(--font-size-l);
+  font-weight: lighter;
+}
+.presentation div div p {
+  font-size: var(--font-size-m);
+}
+.presentation div div h2 span {
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.about div h2 {
+  color: var(--bd-violet);
+  font-size: var(--font-size-xxl);
+}
+.who-am-i div div img {
+  width: 100px;
+}
+.about .skills div div div i, .about .skills div div img {
+  width: 35px;
+  opacity: 50%;
+}
+.about .skills div div div i:hover, .about .skills div div div img:hover {
+  color: #000;
+
+  opacity: 100%;
+
+  cursor: pointer;
+}
