@@ -1,0 +1,9 @@
+.who-am-i div {
+  font-size: var(--font-size-l);
+}
+.who-am-i div:nth-child(2) {
+  display: block;
+}
+.who-am-i div h3 {
+  font-size: var(--font-size-xl);
+}

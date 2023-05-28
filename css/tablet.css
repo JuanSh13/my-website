@@ -8,9 +8,20 @@
   font-size: var(--font-size-xxxl);
 }
 
-.who-am-i div {
-  font-size: var(--font-size-l);
+.contact-home div div div a i {
+  font-size: var(--font-size-xxl);
 }
-.who-am-i div h3 {
+
+.about div h2 {
+  padding-top: 8rem;
+}
+
+.who-am-i div, .skills {
+  font-size: var(--font-size-m);
+}
+.who-am-i div:nth-child(2) {
+  display: block;
+}
+.who-am-i div h3, .skills h3 {
   font-size: var(--font-size-xl);
 }
