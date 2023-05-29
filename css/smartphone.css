@@ -4,3 +4,7 @@
 .presentation div div p {
   font-size: var(--font-size-xl);
 }
+
+.animated-card {
+  height: 20rem;
+}

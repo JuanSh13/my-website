@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
-  <header>
+  <header id="home">
     <nav class="navbar navbar-dark navbar-expand-lg ps-5 position-fixed">
       <div class="container container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -44,7 +44,7 @@
             <li>
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About</a>
@@ -66,7 +66,7 @@
     <section class="presentation">
       <div class="container">
         <div class="d-flex justify-content-center text-light flex-column cols-6">
-          <h2 data-aos="zoom-in-right">JUAN MANUEL <br> <span>OSORIO CHAMBUETA</span></h2>
+          <h2 data-aos="zoom-in-right" data-aos-duration="1500">JUAN MANUEL <br> <span>OSORIO CHAMBUETA</span></h2>
           <p>Full Stack Web Developer</p>
         </div>
       </div>
@@ -88,7 +88,7 @@
   <main>
     <section class="about" id="about">
       <div class="container">
-        <h2 class="section-titles">About</h2>
+        <h2 class="section-titles" data-aos="zoom-in-up">About</h2>
         <div class="row">
           <div class="who-am-i d-flex flex-wrap justify-content-center align-items-center row">
             <div class="col-0 col-md-4 m-5">
@@ -234,28 +234,77 @@
 
     <section class="portafolios" id="portafolios">
       <div class="container">
-        <h2 class="section-titles color-text-portafolios">Portafolios</h2>
+        <h2 class="section-titles color-text-portafolios" data-aos="zoom-in-up">Portafolios</h2>
         <div class="portafolios__card-container container d-flex row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-gap-5">
           <div class="col">
-            <div class="mydiv animate-bg col shadow">
-              <img src="" alt="">
-              <h1 class="sometxt">Beraw</h1>
+            <div class="animated-card bg-back-rgb">
+              <div class="animated-card__main-content">
+                <div class="animated-card__container">
+                  <img src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgnR91l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uEC4qoQh47wMvcYi9t5rfMb3islBglUbywcRScHzwAMbnMdQV3yJGy53ARrQ%25r9R1GW8zWubxdqogqaJhDl3ilUQTpcRScH7o3MbnMd03YyJGy5BYUrQ%25r9YgbW8zWuEfQqogqaFkal3ilU%25ddcRScHzQ7MbnMdg3uyJGy5iRErQ%25r9SbYW8zWunGJqogqaGC7l3ilU%254JcRScHzUAMbnMdgl7yJGy5ieRrQ%25r9SmHW8zWunfCqogqaGo5l3ilU%253wcRScHzN5MbnMdemRyJGy5m3erQ%25r9siwW8zWuon%25qogqa3uJl3ilUR3AcRScHb6oMbnMdJCYyJGy5Q4BrQ%25r993UW8zWuuRCqogqaaRdl3ilUUHJcRScHHwsMbnMddYqyJR0aWAyFnPWyMb3dnqbgyFntBoJltJ0ab6" alt="">
+                  <div class="animated-card__hover-card-description">
+                    <h2>BERAW</h2>
+                    <ul>
+                      <li><i class="fa-brands fa-html5"></i></li>
+                      <li><i class="fa-brands fa-css3-alt"></i></li>
+                      <li><i class="fa-brands fa-js"></i></li>
+                      <li><i class="fa-brands fa-bootstrap"></i></li>
+                    </ul>
+                    <div class="animated-card__btns">
+                      <button>View <i class='fa-solid fa-eye'></i></button>
+                      <button>Code <i class="fa-brands fa-github"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col">
-            <div class="mydiv animate-bg col shadow">
-              <h1 class="sometxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius assumenda autem expedita recusandae a dolorem in tempore praesentium animi? Ducimus consequuntur quasi eos aut? Repudiandae ea provident laudantium earum.</h1>
+            <div class="animated-card bg-back-rgb">
+              <div class="animated-card__main-content">
+                <div class="animated-card__container">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8YGMB8LL0_SB7AeU6DzxJK5bl1UimRdZ5Ug&usqp=CAU" alt="">
+                  <div class="animated-card__hover-card-description">
+                    <h2>BERAW</h2>
+                    <ul>
+                      <li><i class="fa-brands fa-html5"></i></li>
+                      <li><i class="fa-brands fa-css3-alt"></i></li>
+                      <li><i class="fa-brands fa-js"></i></li>
+                      <li><i class="fa-brands fa-bootstrap"></i></li>
+                    </ul>
+                    <div class="animated-card__btns">
+                      <button>View <i class='fa-solid fa-eye'></i></button>
+                      <button>Code <i class="fa-brands fa-github"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col">
-            <div class="mydiv animate-bg col shadow">
-              <h1 class="sometxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eius assumenda autem expedita recusandae a dolorem in tempore praesentium animi? Ducimus consequuntur quasi eos aut? Repudiandae ea provident laudantium earum.</h1>
+            <div class="animated-card bg-back-rgb">
+              <div class="animated-card__main-content">
+                <div class="animated-card__container">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8YGMB8LL0_SB7AeU6DzxJK5bl1UimRdZ5Ug&usqp=CAU" alt="">
+                  <div class="animated-card__hover-card-description">
+                    <h2>BERAW</h2>
+                    <ul>
+                      <li><i class="fa-brands fa-html5"></i></li>
+                      <li><i class="fa-brands fa-css3-alt"></i></li>
+                      <li><i class="fa-brands fa-js"></i></li>
+                      <li><i class="fa-brands fa-bootstrap"></i></li>
+                    </ul>
+                    <div class="animated-card__btns">
+                      <button>View <i class='fa-solid fa-eye'></i></button>
+                      <button>Code <i class="fa-brands fa-github"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   
