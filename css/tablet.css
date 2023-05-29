@@ -16,12 +16,25 @@
   padding-top: 8rem;
 }
 
-.who-am-i div, .skills {
+.who-am-i div, .skills, .what-can-i-do {
   font-size: var(--font-size-m);
 }
-.who-am-i div:nth-child(2) {
-  display: block;
-}
-.who-am-i div h3, .skills h3 {
+.who-am-i div h3, .skills h3, .what-can-i-do h3 {
   font-size: var(--font-size-xl);
 }
+
+.who-am-i div:nth-child(1) {
+  display: block;
+}
+
+.what-can-i-do .what-can-i-do__card {
+  padding: 2rem;
+}
+.what-can-i-do .what-can-i-do__card i {
+  font-size: var(--font-size-xxl);
+}
+.what-can-i-do  .what-can-i-do__card h4 {
+  font-size: var(--font-size-l);
+}
+
+col-sm-12 col-md-5 col-lg-3

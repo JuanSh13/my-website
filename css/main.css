@@ -6,6 +6,9 @@
 :root {
   --bd-purple: #4c0bce;
   --bd-violet: #712cf8;
+  --bd-dark-gray: #242424;
+  --bd-light-grey: #dadada;
+  --bd-white: #ffffff;
 
   --font-size-xxs: 1.4rem;
   --font-size-xs: 1.6rem;
@@ -26,7 +29,7 @@ body {
 nav {
   width: 100%;
 
-  color: #fff;
+  color: var(--bd-white);
   font-size: var(--font-size-s);
 
   background: linear-gradient(90deg, var(--bd-violet) 0%, var(--bd-purple) 40%, var(--bd-violet) 100%);
@@ -48,7 +51,7 @@ nav div a i {
   width: 100%;
   height: 100vh;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../resources/bg-presentation.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../resources/bg-presentation.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,80 +82,123 @@ nav div a i {
   font-size: var(--font-size-xl);
 }
 
-.about div h2 {
-  padding-top: 4rem;
+.section-titles {
+  padding: 4rem 0 6rem;
+  border-bottom: 2px solid var(--bd-purple);
 
   color: var(--bd-violet);
   font-size: var(--font-size-xxl);
-}
-.who-am-i div div img {
-  width: 100px;
-}
-.about .skills div div div i, .about .skills div div img {
-  width: 35px;
-  opacity: 50%;
-}
-.about .skills div div div i:hover, .about .skills div div div img:hover {
-  color: #000;
-
-  opacity: 100%;
-
-  cursor: pointer;
+  text-align: center;
 }
 
-.who-am-i div, .skills {
+.who-am-i div, .skills, .what-can-i-do {
+  color: var(--bd-dark-gray);
   font-size: var(--font-size-xs);
 }
-.who-am-i div:nth-child(2) {
-  display: none;
-}
-.who-am-i div h3, .skills h3 {
+.who-am-i div h3, .skills h3, .what-can-i-do h3 {
+  margin-bottom: 2rem;
+
   font-size: var(--font-size-m);
 }
+
+.who-am-i div:nth-child(1) {
+  display: none;
+}
 .who-am-i div button {
+  border: .2rem solid var(--bd-violet);
+
+  color: #fff;
   font-size: var(--font-size-s);
+
+  background-color: var(--bd-violet);
+}
+.who-am-i div button:hover {
+  color: var(--bd-violet);
+
+  border: .2rem solid var(--bd-violet);
 }
 
-
-.container .swiper-container{
-  width: 100%;
-  height: 100%;
+.what-can-i-do .what-can-i-do__card {
+  padding: 2rem;
+  border-top: 5px solid var(--bd-violet);
 }
-.container .swiper-slide {
-  position: relative;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  border-radius: 15px;
-  text-align: start;
-  box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
-}
-.container .swiper-slide img{
+.what-can-i-do .what-can-i-do__card i {
   display: block;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+
+  margin: 0rem 0 2rem;
+
+  text-align: center;
+  font-size: var(--font-size-xl);
 }
-.container .swiper-slide .card-description{
-  padding:1rem 1rem;
+.what-can-i-do  .what-can-i-do__card h4 {
+  font-size: var(--font-size-m);
 }
-.container .swiper-slide .card-title,.container .swiper-slide .card-text{
-  margin-bottom: .5rem;
-}
-.container .swiper-slide .card-link{
+
+.skills .mySwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
   text-align: center;
 }
-.container .swiper-slide .card-link a{
-  text-decoration: none;
-  color: #1d6ce2;
-}
-.swiper-button-next{
+.skills .mySwiper .swiper-wrapper .swiper-slide i, .skills .mySwiper .swiper-wrapper .swiper-slide img {
+  width: 36px;
+  padding-bottom: 1rem;
+
   color: #000;
-  right: 26px !important;
+  font-size: var(--font-size-xxl);
+
+  opacity: .6;
 }
-.swiper-button-prev{
+.skills .mySwiper .swiper-wrapper .swiper-slide p {
+  display: flex;
+  align-items: center;
+
+  font-size: var(--font-size-xxs);
+}
+
+.portafolios .portafolios__card-container {
+  margin: 10rem 0;
+}
+
+
+.mydiv {
+  position: relative;
+
+  background: #fff;
+}
+.sometxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   color: #000;
-  left: 26px !important;
+}
+.animate-bg:before, .animate-bg:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  background: linear-gradient(120deg, #4c0bce, #712cf8, #7f43f8, #935cff, #9e6eff);
+  background-size: 300%;
+  width: calc(100%);
+  height: calc(100%);
+  z-index: -1;
+  animation: BGgradient 20s ease infinite;
+}
+
+@keyframes BGgradient {
+  0% {
+    background-position: 0% 200%;
+  }
+  50% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: 0% 330%;
+  }
 }
