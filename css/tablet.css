@@ -8,8 +8,8 @@
   font-size: var(--font-size-xxxl);
 }
 
-.contact-home div div div a i {
-  font-size: var(--font-size-xxl);
+.contact-home div div div a {
+  font-size: var(--font-size-xl);
 }
 
 .about div h2 {
@@ -27,16 +27,12 @@
   display: block;
 }
 
-.what-can-i-do .what-can-i-do__card {
+.card-template {
   padding: 2rem;
 }
-.what-can-i-do .what-can-i-do__card i {
+.card-template__icon {
   font-size: var(--font-size-xxl);
 }
-.what-can-i-do  .what-can-i-do__card h4 {
+.card-template h4 {
   font-size: var(--font-size-l);
-}
-
-.animated-card {
-  height: 30rem;
 }

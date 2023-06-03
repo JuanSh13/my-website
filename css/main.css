@@ -78,8 +78,11 @@ nav div a i {
   letter-spacing: 0;
 }
 
-.contact-home div div div a i {
+.contact-home div div div a {
+  margin-right: 1rem;
+
   font-size: var(--font-size-xl);
+  text-decoration: none;
 }
 
 .section-titles {
@@ -104,34 +107,60 @@ nav div a i {
 .who-am-i div:nth-child(1) {
   display: none;
 }
-.who-am-i div button {
+.who-am-i div p {
+  margin-bottom: 2rem;
+}
+.button-template {
+  padding: .6rem 2rem;
   border: .2rem solid var(--bd-violet);
+  border-radius: 5px;
 
-  color: #fff;
-  font-size: var(--font-size-s);
+  color: var(--bd-white);
+  font-size: var(--font-size-m);
+  text-decoration: none;
 
   background-color: var(--bd-violet);
 }
-.who-am-i div button:hover {
+.button-template:hover {
   color: var(--bd-violet);
 
   border: .2rem solid var(--bd-violet);
+  background-color: var(--bd-white);
 }
 
-.what-can-i-do .what-can-i-do__card {
+.card-template {
   padding: 2rem;
   border-top: 5px solid var(--bd-violet);
 }
-.what-can-i-do .what-can-i-do__card i {
-  display: block;
-
+.card-template__icon {
   margin: 0rem 0 2rem;
 
   text-align: center;
   font-size: var(--font-size-xl);
 }
-.what-can-i-do  .what-can-i-do__card h4 {
+.card-template h4 {
   font-size: var(--font-size-m);
+}
+.card-template p {
+  font-size: var(--font-size-s);
+}
+.card-template__picture {
+  width: 100%;
+  margin-bottom: 1rem;
+
+  background: #000;
+}
+.card-template__picture img {
+  width: 100%;
+
+  opacity: .3;
+}
+.card-template:hover img {
+  opacity: 1;
+  transition: .5s;
+}
+.card-template__technologies {
+
 }
 
 .skills .mySwiper .swiper-wrapper .swiper-slide {
@@ -163,106 +192,5 @@ nav div a i {
 .portafolios {
   background: var(--bd-light-grey);
 }
-.portafolios .portafolios__card-container {
-  margin: 2rem 0;
-}
 
 
-.animated-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 40rem;
-}
-.bg-back-rgb {
-  animation: animatedCardPurple 4s ease infinite;
-}
-
-.animated-card__main-content {
-  width: 95%;
-  height: 95%;
-}
-
-.animated-card__container {
-  position: relative;
-
-  width: 100%;
-  height: 100%;
-}
-.animated-card__container img {
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-}
-
-.animated-card__hover-card-description {
-  position: absolute;
-
-  display: none;
-}
-.animated-card__container:hover .animated-card__hover-card-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-
-  color: white;
-
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-}
-.animated-card__hover-card-description h2 {
-  font-size: var(--font-size-xl);
-}
-.animated-card__hover-card-description ul {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-
-  padding: 0;
-
-  font-size: var(--font-size-l);
-}
-.animated-card__hover-card-description ul li {
-  list-style: none;
-}
-
-.animated-card__btns {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-.animated-card__btns button {
-
-  padding: .5rem 2rem;
-  border: none;
-
-  color: #fff;
-  font-size: var(--font-size-s);
-  font-weight: bold;
-
-  background-color: #4c0bce;
-  
-  cursor: pointer;
-}
-.animated-card__btns button:hover {
-  transform: translate(0px, -4px);
-}
-
-
-@keyframes animatedCardPurple {
-  0%   {background-color: #4c0bce;}
-  10%  {background-color: #712cf8;}
-  30%  {background-color: #7f43f8;}
-  50% {background-color: #935cff;}
-  70% {background-color: #9e6eff;}
-  90% {background-color: #7f43f8;}
-  95% {background-color: #712cf8;}
-  100% {background-color: #4c0bce;}
-}
