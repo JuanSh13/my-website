@@ -1,3 +1,34 @@
+let show = document.getElementById('show-text');
+
+function animateText(text) {
+  let index = 0;
+  let animationIntervale = setInterval(() => {
+    if(index >= text.length) {
+      clearInterval(animationIntervale);
+    }
+    else {
+      show.innerHTML = text.substring(0, index + 1);
+      index++;
+    }
+  }, 100);
+}
+
+animateText("Full Stack Web Developer");
+
+let buttonShowList = document.getElementById('button-show-list');
+let buttonHiddenList = document.getElementById('button-hidden-list');
+let navigationMenu = document.getElementById('navigation-bar-menu');
+
+buttonShowList.addEventListener('click', () => {
+  navigationMenu.classList.add("navigation-bar--show");
+  navigationMenu.classList.remove("navigation-bar--hidden");
+});
+buttonHiddenList.addEventListener('click', () => {
+  navigationMenu.classList.add("navigation-bar--hidden");
+  navigationMenu.classList.remove("navigation-bar--show");
+});
+
+
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 10,

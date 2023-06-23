@@ -1,32 +1,33 @@
-.presentation div div {
+/* Section Presentation */
+.presentation__my-info {
   display: flex;
   align-items: start;
 
   text-align: start;
 }
-.presentation div div h2 {
+.presentation__my-info h2 {
   font-size: var(--font-size-xxxl);
 }
-
-.contact-home div div div a {
-  font-size: var(--font-size-xl);
-}
-
-.about div h2 {
+/* Main Titles */
+.main-titles {
   padding-top: 8rem;
 }
+/* Who Am I */
+.who-am-i {
+  flex-direction: column;
+}
+.who-am-i__picture img {
+  /* display: none; */
 
-.who-am-i div, .skills, .what-can-i-do {
+  width: 100%;
+}
+.who-am-i__my-description, .skills, .what-can-i-do {
   font-size: var(--font-size-m);
 }
-.who-am-i div h3, .skills h3, .what-can-i-do h3 {
+.who-am-i__my-description h3, .skills h3, .what-can-i-do h3 {
   font-size: var(--font-size-xl);
 }
-
-.who-am-i div:nth-child(1) {
-  display: block;
-}
-
+/* Card Template  */
 .card-template {
   padding: 2rem;
 }
@@ -36,3 +37,4 @@
 .card-template h4 {
   font-size: var(--font-size-l);
 }
+

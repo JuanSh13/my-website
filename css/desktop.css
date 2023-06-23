@@ -1,0 +1,77 @@
+/* Navigation - Logotype */
+.nav__logotype i {
+  color: var(--bd-white);
+  font-size: var(--font-size-l);
+}
+/* Navigation - Show Button */
+.nav__show-button {
+  display: none;
+
+  background: none;
+}
+/* Navigation - hidden Button */
+.nav__hidden-button {
+  color: var(--bd-white);
+  font-size: var(--font-size-m);
+}
+/* Navigation Bar */
+.navigation-bar {
+  position: static;
+
+  width: 100%;
+  height: auto;
+
+  background: none;
+}
+.navigation-bar--hidden {
+  transform: translateX(0);
+}
+/* Navigation Bar - List */
+.navigation-bar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+}
+/* Navigation Bar - Container Hidden Button */
+.navigation-bar__container-hidden-button {
+  display: none;
+}
+/* Navigation Bar - Sections */
+/* Navigation Menu */
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+
+  padding: 0;
+}
+.navigation-menu__item {
+  border-bottom: 2px solid transparent;
+
+  font-size: var(--font-size-m);
+  font-weight: lighter;
+}
+.navigation-menu__item:hover {
+  border-bottom: 2px solid #fff;
+  transition-duration: .5s;
+}
+/* Navigation Bar - Phone Number */
+.navigation-bar__phone-number {
+  display: flex;
+}
+/* Who Am I */
+.who-am-i {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.who-am-i__picture img {
+  width: 100%;
+}

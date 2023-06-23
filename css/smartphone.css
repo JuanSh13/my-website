@@ -1,6 +1,22 @@
-.presentation div div h2 {
+/* Section Presentation */
+.presentation__my-info h2 {
   font-size: var(--font-size-xxl);
 }
-.presentation div div p {
+.presentation__my-info p {
   font-size: var(--font-size-xl);
+}
+/* Footer List */
+.footer-list {
+  gap: 4rem;
+}
+.footer-list::before, .footer-list::after {
+  display: flex;
+  align-items: center;
+
+  width: 300px;
+  height: 2px;
+  
+  background-color: #faf7fa;
+  
+  content: "";
 }
