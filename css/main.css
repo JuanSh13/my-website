@@ -161,7 +161,7 @@ nav {
   width: 100%;
   height: 100vh;
 
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/bg-presentation.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/img/bg-presentation.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -295,27 +295,30 @@ nav {
 .card-template p {
   font-size: var(--font-size-s);
 }
-.card-template__picture {
+.card-template__figure {
   width: 100%;
   height: 250px;
   margin-bottom: 1rem;
 
   background: #000;
 }
-.card-template__picture img {
+.card-template__img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   
   object-fit: cover;
   object-position: center;
 
-  opacity: .4;
+  opacity: .6;
 }
 .card-template:hover img {
   opacity: 1;
   transition: .3s;
 }
 .card-template__technologies {
+  display: flex;
+  gap: 1rem;
+
   margin-bottom: 1rem;
 
   font-size: var(--font-size-l);

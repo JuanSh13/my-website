@@ -60,7 +60,7 @@
   font-weight: lighter;
 }
 .navigation-menu__item:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   transition-duration: .5s;
 }
 /* Navigation Bar - Phone Number */
