@@ -122,7 +122,7 @@ cardsInfo = [
       "fa-brands fa-css3-alt",
       "fa-brands fa-js"
     ],
-    link: "https://juansh13.github.io/Beraw-Website/"
+    link: "https://juansh13.github.io/Beraw/"
   },
   {
     image: "assets/img/website-kfc-responsive.png",
