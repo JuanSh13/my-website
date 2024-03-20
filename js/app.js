@@ -174,7 +174,7 @@ cardsInfo = [
     image: "assets/img/website-coffe-shop.png",
     creationDate: "2023",
     title: "Coffe Shop",
-    description: "Responsive",
+    description: "No Responsive",
     technologies: [
       "fa-brands fa-html5", 
       "fa-brands fa-css3-alt",
@@ -193,6 +193,30 @@ cardsInfo = [
       "fa-brands fa-js"
     ],
     link: "https://juansh13.github.io/Batatabit/"
+  },
+  {
+    image: "assets/img/website-jungle.png",
+    creationDate: "2024",
+    title: "Jungle",
+    description: "Responsive",
+    technologies: [
+      "fa-brands fa-html5", 
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-js"
+    ],
+    link: "https://juansh13.github.io/Jungle/"
+  },
+  {
+    image: "assets/img/website-fruits.png",
+    creationDate: "2024",
+    title: "Fruits",
+    description: "Responsive",
+    technologies: [
+      "fa-brands fa-html5", 
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-js"
+    ],
+    link: "https://juansh13.github.io/Fruits/"
   },
 ]
 
@@ -239,9 +263,9 @@ for(let i = 0; cardsInfo.length > i; i++) {
   cardTemplate.appendChild( cardTemplateTechnologies);
 
   // Card Description
-  const cardDescription = document.createElement("p");
-  cardDescription.innerHTML = `${cardsInfo[i].description}`;
-  cardTemplate.appendChild(cardDescription);
+  // const cardDescription = document.createElement("p");
+  // cardDescription.innerHTML = `${cardsInfo[i].description}`;
+  // cardTemplate.appendChild(cardDescription);
 
   // Card Buttons
   const cardTemplateButtons = document.createElement("div");
