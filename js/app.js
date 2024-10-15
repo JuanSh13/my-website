@@ -183,6 +183,17 @@ cardsInfo = [
     link: "https://juansh13.github.io/Coffe-Shop-Responsive/"
   },
   {
+    image: "assets/img/website-yardsale-angular.png",
+    creationDate: "2023",
+    title: "Yard Sale Angular",
+    description: "Responsive",
+    technologies: [
+      "fa-brands fa-angular", 
+      "fa-brands fa-sass",
+    ],
+    link: "https://yardsale-angular.netlify.app"
+  },
+  {
     image: "assets/img/website-batatabit.png",
     creationDate: "2024",
     title: "Batatabit",
