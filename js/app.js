@@ -89,6 +89,29 @@ let swiper = new Swiper(".mySwiper", {
 //     });
 
 
+function myFunction() {
+  var input, filter, card, li, a, i, txtValue;
+  input = document.getElementById("myInput"); // Input
+  filter = input.value.toUpperCase();
+  portafolioCards = document.querySelector(".portafolios__cards-container");
+  card = portafolioCards.getElementsByTagName("section");
+  // console.log(card[0]);
+
+  // Genera un bucle de los items
+  for (i = 0; i < card.length; i++) {
+      // Muestra la etiqueta a de los items
+      h4 = card[i].getElementsByTagName("h4")[0];
+      txtValue = h4.textContent || h4.innerText;
+      console.log(txtValue)
+
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        card[i].style.display = "";
+      } else {
+        card[i].style.display = "none";
+      }
+  }
+}
+
 cardsInfo = [
   {
     image: "assets/img/website-rumbo.png",
@@ -108,9 +131,23 @@ cardsInfo = [
     description: "Responsive",
     technologies: [
       "fa-brands fa-html5", 
-      "fa-brands fa-css3-alt"
+      "fa-brands fa-css3-alt",
     ],
     link: "https://juansh13.github.io/Construction-Company-Responsive-Website/"
+  },
+  {
+    image: "assets/img/website-pets-app.png",
+    creationDate: "2020",
+    title: "Pets App",
+    description: "Mobile App",
+    technologies: [
+      "fa-brands fa-html5", 
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-js",
+      "fa-brands fa-php",
+      "fa-solid fa-database"
+    ],
+    link: "https://github.com/JuanSh13/pets-mobile_application"
   },
   {
     image: "assets/img/website-beraw.png",
@@ -125,6 +162,20 @@ cardsInfo = [
     link: "https://juansh13.github.io/Beraw/"
   },
   {
+    image: "assets/img/website-clothing-shop.png",
+    creationDate: "2022",
+    title: "Clothing Shop",
+    description: "Responsive",
+    technologies: [
+      "fa-brands fa-html5", 
+      "fa-brands fa-css3-alt",
+      "fa-brands fa-bootstrap",
+      "fa-brands fa-php",
+      "fa-solid fa-database"
+    ],
+    link: "https://github.com/JuanSh13/clothing_store"
+  },
+  {
     image: "assets/img/website-kfc-responsive.png",
     creationDate: "2023",
     title: "Kentucky Fried Chicken",
@@ -134,7 +185,7 @@ cardsInfo = [
       "fa-brands fa-css3-alt", 
       "fa-brands fa-js"
     ],
-    link: "https://juansh13.github.io/Beraw-Website/"
+    link: "https://juansh13.github.io/KFC-Responsive/"
   },
   {
     image: "assets/img/website-google.png",
@@ -237,6 +288,7 @@ const cardsContainer = document.querySelector(".portafolios__cards-container");
 for(let i = 0; cardsInfo.length > i; i++) {
   // Card Template
   const col = document.createElement("div");
+  col.classList.add('col')
   const cardTemplate = document.createElement("section");
   cardTemplate.classList.add('card-template', 'card-template--between', 'what-can-i-do__card', 'shadow');
   col.appendChild(cardTemplate);
